@@ -1,29 +1,70 @@
 body {
 	font-family: Helvetica;
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+header {
 	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	padding-bottom: 10px;
+	padding-top: 30px;
 }
 
 #container {
-	margin: 0 auto;
-	padding: 10px;
-	float: left;
-}
-
-button {
-	border: 2px solid black;
-	background: transparent;
-	border-radius: 10px;
-	padding: 10px;
-	width: 85px;
-}
-
-.twit {
-	width: 200px;
+	width: 100%;
+	padding-bottom: 20px;
 }
 
 .butt {
-	background: blue;
-	height: 100px;
-	width: 100px;
-	border-radius: 30px;
+	background-image: url(http://desktopwallpapers.biz/wp-content/uploads/2014/09/Texture-For-Downloads.jpg);
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: center;
+}
+
+#twitter {
+	float: left;
+	background-image: url(http://i.imgur.com/AvGhsus.png);
+}
+
+#instagram {
+	float: right;
+	background-image: url(http://i.imgur.com/Js1wM8W.jpg);
+}
+
+#email {
+	margin: 0 auto;
+}
+
+#hawks {
+	float: left;
+	background-image: url(http://images5.alphacoders.com/460/460233.jpg);
+	opacity: .9;
+}
+
+#boop {
+	margin: 0 auto;
+	background-image: url(http://blog.4tests.com/images/2013/09/stanfordcampus.jpg);
+	opacity: .9;
+}
+
+#stan {
+	float: right;
+}
+
+button {
+	border: 2px solid white;
+	background: rgba(0, 0, 0, .4);
+	border-radius: 5px;
+	padding: 10px;
+	width: 85px;
+	color: white;
+	margin-top: 40%;
+}
+
+button:hover {
+	background: rgba(0, 0, 0, .2);
 }
