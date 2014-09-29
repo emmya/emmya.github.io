@@ -1,0 +1,29 @@
+body {
+	font-family: Helvetica;
+	text-align: center;
+}
+
+#container {
+	margin: 0 auto;
+	padding: 10px;
+	float: left;
+}
+
+button {
+	border: 2px solid black;
+	background: transparent;
+	border-radius: 10px;
+	padding: 10px;
+	width: 85px;
+}
+
+.twit {
+	width: 200px;
+}
+
+.butt {
+	background: blue;
+	height: 100px;
+	width: 100px;
+	border-radius: 30px;
+}
