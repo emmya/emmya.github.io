@@ -20,7 +20,7 @@ header {
 	background-image: url(http://desktopwallpapers.biz/wp-content/uploads/2014/09/Texture-For-Downloads.jpg);
 	width: 250px;
 	height: 250px;
-	border-radius: 50%;
+	/*border-radius: 50%;*/
 	text-align: center;
 	vertical-align: center;
 }
@@ -53,6 +53,34 @@ header {
 
 #stan {
 	float: right;
+}
+
+#threeLeft {
+	float: left;
+}
+
+#threeMid {
+	margin: 0 auto;
+	background-image: url(http://i.imgur.com/AmcAfnB.png?1);
+}
+
+#threeRight {
+	float: right;
+	background-image: url(http://i.imgur.com/gvofkM6.png);
+}
+
+#fourLeft {
+	float: left;
+	background-image: url(http://i.imgur.com/c7lcmPW.jpg);
+}
+
+#fourMid {
+	margin: 0 auto;
+}
+
+#fourRight {
+	float: right;
+	background-image: url(http://i.imgur.com/cRSrF4Y.jpg?1);
 }
 
 button {
