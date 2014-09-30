@@ -20,7 +20,7 @@ header {
 	background-image: url(http://desktopwallpapers.biz/wp-content/uploads/2014/09/Texture-For-Downloads.jpg);
 	width: 250px;
 	height: 250px;
-	border-radius: 50%;
+/*	border-radius: 50%;*/
 	text-align: center;
 	vertical-align: center;
 }
@@ -39,19 +39,19 @@ header {
 	margin: 0 auto;
 }
 
-#hawks {
+#twoLeft {
 	float: left;
 	background-image: url(http://images5.alphacoders.com/460/460233.jpg);
 	opacity: .9;
 }
 
-#boop {
+#twoMid {
 	margin: 0 auto;
 	background-image: url(http://blog.4tests.com/images/2013/09/stanfordcampus.jpg);
 	opacity: .9;
 }
 
-#stan {
+#twoRight {
 	float: right;
 }
 
@@ -95,4 +95,14 @@ button {
 
 button:hover {
 	background: rgba(0, 0, 0, .2);
+}
+
+footer {
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin: 0 auto;
+	width: 100%;
+	background-image: url(http://desktopwallpapers.biz/wp-content/uploads/2014/09/Texture-For-Downloads.jpg);
+	font-size: 10px;
+	color: white;
+	opacity: .5;
 }
