@@ -4,7 +4,10 @@
 <head>
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js'></script>
 <script language="javascript" type="text/javascript" src="script.js"></script>
+
+
 <title>Emmy Armintrout</title>
 </head>
 
@@ -12,7 +15,7 @@
 
 <header>
 <div id="jamdog">
-<img id="doog" src="DogGuitarGif.gif" height=120px width=90px>
+<!-- <img id="doog" src="DogGuitarGif.gif" height=120px width=90px> -->
 </div>
 
 <h1>EMMY ARMINTROUT</h1>
@@ -29,19 +32,17 @@
 <!-- row 1 -->
 <div id="container">
 
-	<div id="twitter" class = "butt">
+	<div id="oneLeft" class = "butt">
 		<a href="http://twitter.com/emmyarm" target="_blank">
 		<button>Twitter</button>
 		</a>
 	</div>
 
-	<div id="instagram" class = "butt">
-		<a href="http://instagram.com/emmyarm" target="_blank">
-		<button>Instagram</button>
-		</a>
+	<div id="oneRight" class = "butt">
+		<button id="dog" onclick="javascript:goDog()"><span class="whoa">unleash mayhem</span></button>
 	</div>
 
-	<div id="email" class="butt">
+	<div id="oneMid" class="butt">
 		<a href="mailto:emmya@alumni.stanford.edu">
 		<button>Email</button>
 		</a>
@@ -92,9 +93,10 @@
 	</div>
 
 	<div id="threeMid" class="butt">
-		<!-- <a href="https://www.youtube.com/watch?v=QnZ0cKLWYWU" target="_blank"> -->
-		<button id="dog" onclick="javascript:goDog()">$$</button>
+		<a href="https://www.facebook.com/video.php?v=4480826291098&set=vb.1003260064&type=3&theater" target="_blank">
+		<button>@@</button>
 		</a>
+		<!-- <a href="https://www.youtube.com/watch?v=QnZ0cKLWYWU" target="_blank"> -->
 	</div>
 
 	<div class="clear"></div>
@@ -111,8 +113,8 @@
 	</div>
 
 	<div id="fourRight" class = "butt">
-		<a href="https://www.facebook.com/video.php?v=4480826291098&set=vb.1003260064&type=3&theater" target="_blank">
-		<button>@@</button>
+		<a href="http://instagram.com/emmyarm" target="_blank">
+		<button>Instagram</button>
 		</a>
 	</div>
 
@@ -128,9 +130,8 @@
 <!-- end row 4
 footer -->
 
-<!-- <footer>
-<h3>Currently studying web development at <a href="http:generalassemb.ly" target="_blank">General Assembly</a>.</h3>
-</footer> -->
+<footer>
+</footer>
 
 
 </body>
