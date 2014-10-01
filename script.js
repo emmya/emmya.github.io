@@ -7,7 +7,7 @@ $(document).ready(function(){
     // 	$('header').fadeTo('fast', 1);
     // });
     $('button').mouseenter(function() {
-    	$(this).fadeTo('fast', .2);
+    	$(this).fadeTo('fast', .4);
     });
     $('button').mouseleave(function() {
     	$(this).fadeTo('fast', 1);
