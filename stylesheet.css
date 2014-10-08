@@ -1,109 +1,111 @@
 body {
 	font-family: Helvetica;
 	margin: 0 auto;
-	max-width: 400px;
+	padding: 0;
+	margin: 0;
 }
 
-header {
-	font-family: 'Open Sans Condensed', sans-serif;
-	padding-bottom: 10px;
-	padding-top: 30px;
+#left {
+	width: 300px;
+	height: 500px;
+	float: left;
+	/*background-color: black;*/
+	background-image: url(http://desktopbackground.in/wp-content/uploads/2014/09/Blurred-Background-for-android.jpg);
+	background-size: cover;
+	opacity: .6;
+	text-align: center;
+}
+
+#icon {
+	position: absolute;
+	width: 54px;
+	z-index: 10;
+	margin-left: 123px;
+	margin-top: 174px;
+	border-radius: 50%;
 }
 
 h1 {
 	font-size: 30px;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin-top: 70px;
 }
-h2 {
+
+h3 {
 	font-size: 15px;
-}
-
-#jamdog {
-	position: absolute;
-	z-index: 100;
-}
-
-ul {
-	text-align: center;
-	margin: 0;
-	padding: 0 0 15px 0;
-}
-
-
-li {
-	display: inline;
-	padding: 0 15px 0 15px;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin-top: 100px;
 }
 
 #container {
-	width: 100%;
-	padding-bottom: 20px;
+	margin-right: 0px;
 }
 
 .butt {
 	background-image: url(http://desktopwallpapers.biz/wp-content/uploads/2014/09/Texture-For-Downloads.jpg);
+	background-size: cover;
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
 	text-align: center;
 	vertical-align: center;
-	background-size: cover;
+	/*button positioning*/
+	position: relative;
+	margin-top: 10px;
+	float: left;
 }
 
 #oneLeft {
-	float: left;
 	background-image: url(http://i.imgur.com/AvGhsus.png);
 }
 
 #oneRight {
-	float: right;
 	background-image: url(http://i.imgur.com/Js1wM8W.jpg);
 }
 
 #oneMid {
-	margin: 0 auto;
 }
 
 #twoLeft {
-	float: left;
 	background-image: url(http://images5.alphacoders.com/460/460233.jpg);
 	opacity: .9;
 }
 
 #twoMid {
-	margin: 0 auto;
 	background-image: url(http://blog.4tests.com/images/2013/09/stanfordcampus.jpg);
 	opacity: .9;
 }
 
 #twoRight {
-	float: right;
+	background-image: url(http://images2.wikia.nocookie.net/__cb20060904183543/uncyclopedia/images/8/81/Gasp.jpg);
+	opacity: .8;
 }
 
 #threeLeft {
-	float: left;
+	background-image: url(http://th03.deviantart.net/fs70/PRE/i/2013/294/e/4/texture_401_by_sirius_sdz-d6radw3.jpg);
+	opacity: .9;
 }
 
 #threeMid {
-	margin: 0 auto;
 	background-image: url(http://i.imgur.com/AmcAfnB.png?1);
 }
 
 #threeRight {
-	float: right;
 	background-image: url(http://i.imgur.com/gvofkM6.png);
 }
 
 #fourLeft {
-	float: left;
 	background-image: url(http://i.imgur.com/c7lcmPW.jpg);
 }
 
 #fourMid {
-	margin: 0 auto;
+	background-image: url(http://tiger.towson.edu/~scleve3/stock-footage-close-up-shot-of-a-tired-and-sleepy-golden-retriever-trying-to-doze-off-hd[1].jpg);
+	opacity: .9;
 }
 
 #fourRight {
-	float: right;
 	background-image: url(http://i.imgur.com/cRSrF4Y.jpg?1);
 }
 
@@ -115,27 +117,24 @@ button {
 	width: 70px;
 	color: white;
 	margin-top: 35%;
-	font-size: 10px;
+	font-size: 9px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+button:hover {
+	background: rgba(0, 0, 0, .1);
 }
 
 #dog {
 	margin-top: 30%;
 }
 
-/*button:hover {
-	background: rgba(0, 0, 0, .2);
-}*/
-
-footer {
-	font-family: 'Open Sans Condensed', sans-serif;
-	margin: 0 auto;
-	width: 100%;
-	height: 1px;
-	background-color: black;
-	font-size: 10px;
-	color: white;
-	margin-top: 15px;
-	margin-bottom: 60px;
+#jamdog {
+	position: absolute;
+	z-index: 100;
 }
-
 
