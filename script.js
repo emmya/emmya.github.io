@@ -53,7 +53,7 @@ function getTopSpacing(nr) {
         spacing = minimumSpace;
         sideDiv.style.height = ((nr*(diameter+minimumSpace)+minimumSpace)+"px");
     } else {
-        h = origHeight;
+        h = window.innerHeight;
         sideDiv.style.height = (h+5+"px");
         spacing = (h-(diameter*nr))/(nr+1);
     } for (var x=0; x<numCircles; x++) {
