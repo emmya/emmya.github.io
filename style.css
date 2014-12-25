@@ -1,0 +1,86 @@
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.headcontainer {
+  text-align: center;
+  margin: 10px 0 40px 0;
+}
+
+.headshot {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.portfoliocontainer {
+  width: 600px;
+  /*background-color: blue;*/
+  margin: 0 auto;
+}
+.portfolio {
+  margin: 3px;
+  float: left;
+  width: 290px;
+  height: 270px;
+  /*background-color: gray;*/
+}
+
+.header {
+  text-align: center;
+}
+
+#p3 {
+  clear: both;
+}
+
+#p5 {
+  float: none;
+  margin: 0 auto;ß
+}
+
+.icon {
+  width: 200px;
+  margin-top: 5px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.description {
+  width: 200px;
+  font-size: 10px;
+  padding-left: 44px;
+  margin-top: -10px;
+}
+
+.list {
+  margin-top: 5px;
+}
+
+.links {
+  margin-top: 7px;
+}
+
+@media (max-width: 610px) {
+
+  .description{
+    font-size: 12px;
+  }
+
+  a {
+    padding: 3px;
+  }
+
+  .portfoliocontainer {
+    width: 300px;
+  }
+
+  .portfolio {
+    height: auto;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    border-top: 1px solid black;
+  }
+
+}
