@@ -12,9 +12,9 @@ var w = window.innerWidth; // window width
 var h = window.innerHeight; //window height
 
 var diameter = 100; //size of items
-var minimumSides = 60; 
+var minimumSides = 60;
 var minimumSpace = 40;
-var sideMargins; 
+var sideMargins;
 var spacing;
 var nr; //number of rows there should be
 var nc; //number of columns there should be
@@ -57,7 +57,7 @@ function getTopSpacing(nr) {
         sideDiv.style.height = (h+5+"px");
         spacing = (h-(diameter*nr))/(nr+1);
     } for (var x=0; x<numCircles; x++) {
-        circles[x].style.marginTop = (spacing+"px"); 
+        circles[x].style.marginTop = (spacing+"px");
     }
 }
 getTopSpacing(nr);
@@ -97,7 +97,7 @@ var guitar = document.getElementById("guitar");
 
 function crazyDog(count) {
     if (count%2 === 0) {
-        $('#jamdog').html('<img src="DogGuitarGif.gif" height=200px width=170px>');
+        $('#jamdog').html('<img src="http://i.imgur.com/9DueHnf.gifv" height=200px width=170px>');
         animateDiv();
         guitar.play();
         $('.whoa').html("can't stop the dog!");
@@ -114,13 +114,13 @@ function makeNewPosition(){
     var w = $(window).width() - 50;
     var nh = Math.floor(Math.random() * h);
     var nw = Math.floor(Math.random() * w);
-    return [nh,nw];      
+    return [nh,nw];
 }
 
 function animateDiv(){
     var newq = makeNewPosition();
     $('#jamdog').animate({ top: newq[0], left: newq[1] }, 2000, function(){
-      animateDiv();        
+      animateDiv();
     });
 };
 });
