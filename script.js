@@ -132,9 +132,10 @@ $(':button').mouseenter(function() {
 });
 $('.butt').mouseleave(function() {
     $(this).children('.info').animate({
-        opacity: 0,
-        zIndex: -1
+        opacity: 0
+        // zIndex: -1
     }, 300);
+    par.children('.info').css("zIndex", -1);
     // $(this).zIndex(-1);
     // $(this).children(':button').animate({
     //     opacity: 1
