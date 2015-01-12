@@ -119,6 +119,7 @@ p {
   margin-top: -80px;
   margin-left: -80px;
   cursor: default;
+  z-index: -1;
 }
 .info a {
   color: rgba(255, 255, 255, .8);

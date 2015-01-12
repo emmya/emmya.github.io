@@ -122,17 +122,20 @@ function animateDiv(){
 //info balloons
 $(':button').mouseenter(function() {
     var par = $(this).closest('.butt');
+    par.children('.info').css("zIndex", 1);
     par.children('.info').animate({
         opacity: 1
-    }, 200);
+    }, 300);
     // $(this).animate({
     //     opacity: 0
     // }, 200);
 });
 $('.butt').mouseleave(function() {
     $(this).children('.info').animate({
-        opacity: 0
-    }, 200);
+        opacity: 0,
+        zIndex: -1
+    }, 300);
+    // $(this).zIndex(-1);
     // $(this).children(':button').animate({
     //     opacity: 1
     // }, 200);
