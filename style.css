@@ -1,86 +1,213 @@
 body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
-  font-size: 12px;
+  font-family: Helvetica;
+  margin: 0 auto;
+  padding: 0;
+  margin: 0;
 }
 
-.headcontainer {
+.hide {
+  opacity: 0;
+}
+
+#left {
+  width: 300px;
+  height: 500px;
+  float: left;
+  /*background-color: black;*/
+  background-image: url(http://fc03.deviantart.net/fs70/i/2013/144/8/6/texture_313_by_sirius_sdz-d606xty.jpg);
+  /*background-size: cover;*/
+  opacity: .6;
   text-align: center;
-  margin: 10px 0 40px 0;
 }
 
-.headshot {
-  width: 120px;
+#icon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+  margin-left: 100px;
+  margin-top: 174px;
   border-radius: 50%;
 }
 
-.portfoliocontainer {
-  width: 600px;
-  /*background-color: blue;*/
+h1 {
+  font-size: 30px;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-top: 70px;
+}
+
+h3 {
+  font-size: 15px;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-top: 140px;
+}
+
+a {
+  color: rgba(0, 0, 0, .8);
+}
+
+a:hover {
+  color: white;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+p {
+  color: rgba(255, 255, 255, 1);
+  font-size: 11px;
+  margin: 20px 50px 0px 50px;
+}
+.sorters {
   margin: 0 auto;
+  width: 200px;
 }
-.portfolio {
-  margin: 3px;
-  float: left;
-  width: 290px;
-  height: 270px;
-  /*background-color: gray;*/
+.sorters p {
+  font-size: 13px;
+  color: white;
+}
+.filter {
+  border: 1px solid white;
+  background: rgba(0, 0, 0, .5);
+  display: inline-block;
+  padding: 3px;
+  margin: 5px 2px 0 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+}
+.filter:hover {
+  opacity: .7;
+  cursor: pointer;
 }
 
-.header {
+.container {
+  margin-right: 0px;
+}
+
+.butt {
+  background-image: url(http://desktopwallpapers.biz/wp-content/uploads/2014/09/Texture-For-Downloads.jpg);
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   text-align: center;
+  vertical-align: center;
+  /*button positioning*/
+  position: relative;
+  margin-top: 10px;
+  float: left;
 }
 
-#p3 {
-  clear: both;
+.mix {
+  display: none;
 }
 
-#p5 {
-  float: none;
-  margin: 0 auto;ß
-}
-
-.icon {
-  width: 200px;
-  margin-top: 5px;
-  border: 1px solid gray;
-  border-radius: 10px;
-}
-
-.description {
-  width: 200px;
+.info {
+  text-align: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, .6);
+  color: white;
   font-size: 10px;
-  padding-left: 44px;
-  margin-top: -10px;
+  width: 110px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: -80px;
+  margin-left: -80px;
+  cursor: default;
+}
+.info a {
+  color: rgba(255, 255, 255, .8);
+}
+.info a:hover {
+  color: rgba(255, 255, 255, .5);
 }
 
-.list {
-  margin-top: 5px;
+#oneLeft {
+  background-image: url(http://i.imgur.com/AvGhsus.png);
 }
 
-.links {
-  margin-top: 7px;
+#oneRight {
+  background-image: url(http://i.imgur.com/Js1wM8W.jpg);
+  background-position: center;
 }
 
-@media (max-width: 610px) {
-
-  .description{
-    font-size: 12px;
-  }
-
-  a {
-    padding: 3px;
-  }
-
-  .portfoliocontainer {
-    width: 300px;
-  }
-
-  .portfolio {
-    height: auto;
-    margin-bottom: 20px;
-    padding-top: 10px;
-    border-top: 1px solid black;
-  }
-
+#oneMid {
+  background-image: url(http://i.imgur.com/04Jbq0c.png?1);
 }
+
+#twoLeft {
+  background-image: url(http://images5.alphacoders.com/460/460233.jpg);
+  opacity: .9;
+}
+
+#twoMid {
+  background-image: url(http://blog.4tests.com/images/2013/09/stanfordcampus.jpg);
+  opacity: .9;
+}
+
+#twoRight {
+  background-image: url(http://images2.wikia.nocookie.net/__cb20060904183543/uncyclopedia/images/8/81/Gasp.jpg);
+  opacity: .8;
+}
+
+#threeLeft {
+  background-image: url(http://i.imgur.com/a9vBcdM.png);
+  background-position: center;
+}
+
+#threeMid {
+  background-image: url(http://i.imgur.com/AmcAfnB.png?1);
+}
+
+#threeRight {
+  background-image: url(http://i.imgur.com/LyvxnDF.png?1);
+}
+
+#fourLeft {
+  background-image: url(http://i.imgur.com/c7lcmPW.jpg);
+}
+
+#fourMid {
+  background-image: url(http://i.imgur.com/WvbKHjV.png?1);
+  opacity: .9;
+}
+
+#fourRight {
+  background-image: url(http://i.imgur.com/cRSrF4Y.jpg?1);
+}
+
+button {
+  border: 1px solid white;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 5px;
+  padding: 7px;
+  width: 70px;
+  color: white;
+  margin-top: 35%;
+  font-size: 9px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, .1);
+  cursor: pointer;
+}
+
+.largerbutton {
+  margin-top: 30%;
+}
+
+#jamdog {
+  position: absolute;
+  z-index: 100;
+}
+

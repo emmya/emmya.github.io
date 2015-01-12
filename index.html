@@ -1,170 +1,173 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
-<link rel="stylesheet" href="style.css"></style>
-<script src="script.js"></script>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-<title>Emmy Armintrout</title>
-<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="stylesheet.css"></style>
+  <meta name="viewport" content="width=device-width">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <title>Emmy Armintrout</title>
 </head>
+
 <body>
 
-
-<div class="headcontainer">
-
-<img class="headshot" src="http://i.imgur.com/GkrQObu.png">
-
-<div class="info">
-  <span class="name">Emmy Armintrout</span>
-  <div class="details">
-    Seattle, WA > Stanford '14 > San Francisco
-    <br>
-    <a href="https://linkedin.com/in/emmyarm" target="_blank">LinkedIn</a> |
-    <a target="_blank" href="http://twitter.com/emmyarm">Twitter</a> | <a href="https://github.com/emmya" target="_blank">Github</a>
-  </div>
+<div id="jamdog">
 </div>
 
+<!-- <img id="icon" src="http://i.imgur.com/GkrQObu.png"> -->
+<img id="icon" src="http://i.imgur.com/2usQMmH.jpg?2">
+
+<div id="left">
+  <h1>EMMY<br> ARMINTROUT</h1>
+  <h3>Seattle, WA > <br>Stanford '14 > <br>San Francisco, CA</h3>
+  <p>
+  Recent grad from the web dev program @
+  <a href="https://generalassemb.ly">General Assembly</a>.
+  </p>
+  <p>
+  The latest:
+  <a href="http://playbattleship.herokuapp.com">Battleship (beta)</a>
+  </p>
+  <p>
+  <a href="https://linkedin.com/in/emmyarm" target="_blank">LinkedIn</a> |
+    <a target="_blank" href="http://twitter.com/emmyarm">Twitter</a> |
+    <a href="https://github.com/emmya" target="_blank">GitHub</a>
+</p>
+  <div class="sorters">
+  <p>
+  Filter:
+  <div class="filter" data-filter="all">All</div>
+  <div class="filter" data-filter="site">Websites</div>
+  <div class="filter" data-filter="fullstack">Full stack</div>
+  <div class="filter" data-filter="jquery">Animated</div>
+  <div class="filter" data-filter="fun">Misc</div>
+  <div class="filter" data-filter="social">Social</div>
+  </p>
+  </div>
+
 </div>
 
-<!-- ============= -->
-<!--  portfoilio   -->
-<!-- ============= -->
-<div class="portfoliocontainer">
+<div class="container" id="Container">
 
-<!-- GIMME -->
-  <div class="portfolio" id="p1">
-
-  <div class="header">
-  Gimme
-  <br>
-  <img class="icon" src="http://i.imgur.com/De9QWFg.png">
+  <div id="oneLeft" class ="butt mix social contact">
+    <a href="http://twitter.com/emmyarm" target="_blank">
+    <button>Twitter</button>
+    </a>
   </div>
 
-  <div class="description">
-  <br>Created: Nov '14
-  <br>Last updated: --<br>
-
-  <div class="list">
-    <li>Full stack rails app</li>
-    <li>Mobile-first design</li>
-    <li>AJAX and Handlebars</li>
-    <li>Facebook login API</li>
+  <div id="oneRight" class = "butt mix fun jquery">
+    <button class="largerbutton" id="dog" onclick="javascript:goDog()"><span class="whoa">unleash the dog!!</span></button>
+    <div class="info hide">You know you want to...</div>
   </div>
 
-  <div class="links">
-  <a target="_blank" href="http://gimmeapp.herokuapp.com">Site</a> |
-  <a target="_blank" href="https://github.com/emmya/gimme">Source code</a>
-  </div>
-  </div>
-  <!-- closes description div -->
+  <div id="oneMid" class="butt mix site jquery">
+    <a href="http://beastmodewisdom.tumblr.com" target="_blank">
+    <button class="largerbutton">Marshawn Wisdom</button>
+    </a>
+    <div class="info hide">
+    Just bout that action boss. Audio, JQuery animation, PS gif/icon. Mobile/touch-friendly.
+      <div class="links">
+          <a target="_blank" href="http://beastmodewisdom.tumblr.com">Site</a> | <a href="https://github.com/emmya/marshawn.wisdom" target="_blank">Source code</a>
+      </div>
+    </div>
+
   </div>
 
-
-<!-- ULTIMATE -->
-  <div class="portfolio" id="p2">
-  <div class="header">
-  Ultimate Tic Tac Toe<br>
-  <img class="icon" src="http://i.imgur.com/5AJhvA1.png">
+  <div id="fourLeft" class = "butt mix social contact">
+    <a href="https://www.linkedin.com/in/emmyarm" target="_blank">
+    <button>LinkedIn</button>
+    </a>
   </div>
 
-  <div class="description">
-  <br>Created: Oct '14<br>
-  Last updated: --<br>
-
-  <div class="list">
-    <li>Programmed game from scratch in JavaScript</li>
-    <li>JS, JQuery, CSS3, and <a href="http://ricostacruz.com/jquery.transit/">Transit</a> animation</li>
-    <li>Some styling with <a href="http://tympanus.net/Development/Arctext/">Arctext</a></li>
+  <div id="twoRight" class = "butt mix fun">
+    <a href="http://hackertyper.net/" target="_blank">
+    <button class="largerbutton">Confidence Booster</button>
+    </a>
   </div>
 
-  <div class="links">
-  <a target="_blank" href="http://emmyarm.tumblr.com/ultimatettt">Site</a> |
-  <a target="_blank" href="https://github.com/emmya/ultimateTTT">Source code</a>
-  </div>
-  </div>
-  <!-- closes description div -->
-  </div>
-  <!-- closes ultimate div -->
-
-<!-- EPIC PORTRAIT -->
-  <div class="portfolio" id="p3">
-  <div class="header">
-  Epic Portrait Generator<br>
-  <img class="icon" src="http://i.imgur.com/Ljmyd8M.png">
+  <div id="twoMid" class="butt mix social">
+    <a href="http://vimeo.com/user3946808" target="_blank">
+    <button>Vimeo</button>
+    </a>
   </div>
 
-  <div class="description">
-  <br>Created: Oct '14<br>
-  Last updated: Nov '14<br>
+  <div id="threeLeft" class = "butt mix design game jquery site">
+    <a href="http://emmyarm.tumblr.com/ultimatettt" target="_blank">
+    <button class="largerbutton">Ultimate Tic Tac Toe</button>
+    </a>
+    <div class="info hide">
+    Tic tac toe on steroids! CSS3/JQuery animation. Built from scratch in JS.
+    <div class="links">
+        <a target="_blank" href="http://emmyarm.tumblr.com/ultimatettt">Site</a> |
+        <a target="_blank" href="https://github.com/emmya/ultimateTTT">Source code</a>
+    </div>
 
-  <div class="list">
-    <li>Full stack web app</li>
-    <li>Backend made in Sequelize and JavaScript</li>
-    <li>Encrypted login coded with <a href="http://passportjs.org/">Passport</a></li>
-    <li>JavaScript Canvas, <a href="https://github.com/expressjs/multer">Multer</a> and Imgur API uploader</li>
-  </div>
-
-  <div class="links">
-  <a target="_blank" href="http://epicportrait.herokuapp.com">Site</a> | Source code
-  <!-- <a target="_blank" href="">Source code</a> -->
-  </div>
-  </div>
-  <!-- closes description div -->
-  </div>
-  <!-- closes portfolio div -->
-
-<!-- PERSONAL -->
-  <div class="portfolio" id="p4">
-  <div class="header">
-  Old Personal Site<br>
-   <img class="icon" src="http://i.imgur.com/lZv6uEU.png">
+    </div>
   </div>
 
-  <div class="description">
-  <br>Created: Sep '14<br>
-  Last updated: Nov '14<br>
+  <div id="threeRight" class = "butt mix fullstack node javascript site">
+    <a href="http://epicportrait.herokuapp.com" target="_blank">
+    <button class="largerbutton">Epic Portrait Generator</button>
+    </a>
 
-  <div class="list">
-    <li>Custom responsive JS layout</li>
-    <li>Try unleashing the dog :) </li>
-  </div>
-  <div class="links">
-  <a target="_blank" href="http://emmyarm.tumblr.com">Site</a> |
-  <a target="_blank" href="https://github.com/emmya/oldPersonal">Source code</a>
-  </div>
-  </div>
-  <!-- closes description div -->
-  </div>
-  <!-- closes personal div -->
-
-  <!-- BATTLESHIP -->
-  <div class="portfolio" id="p5">
-  <div class="header">
-  Battleship<br>
-   <img class="icon" src="">
+    <div class="info hide">
+    Node CRUD app with image hosting, Passport login and authentication, and JS Canvas. Nothing else like it on the Internet. Epic.
+      <div class="links">
+          <a target="_blank" href="http://epicportrait.herokuapp.com">Site</a> | <a href="https://github.com/emmya/epicportrait" target="_blank">Source code</a>
+      </div>
+    </div>
   </div>
 
-  <div class="description">
-  <br>Coming soon!<br>
+  <div id="threeMid" class="butt mix fullstack node game site">
+    <a href="http://emmyarm.tumblr.com/memorygame" target="_blank">
+    <button class="largerbutton">Battleship (beta)</button>
+    </a>
+    <div class="info hide">
+        Node, Sequelize, Postgresql app. Real-time multiplayer built with Socket.io. Improved design/UX coming soon!
+        <div class="links">
+        <a target="_blank" href="http://playbattleship.herokuapp.com">Site</a> |
+        <a target="_blank" href="https://github.com/emmya/battleship3">Source code</a>
+      </div>
+    </div>
+  </div>
 
-  <div class="list">
-    <li>Node app with heavy JavaScript, server and local storage</li>
-    <li><a href="http://socket.io/">Socket.io</a> real-time communication</li>
+  <div id="twoLeft" class = "butt mix fun">
+    <a href="http://www.nfl.com/videos/nfl-films-sound-efx/0ap2000000316739/Sound-FX-Seahawks-clinch-Super-Bowl-berth" target="_blank">
+    <button>:)</button>
+    </a>
   </div>
-  <div class="links">
-  <!-- <a target="_blank" href="http://emmya.github.io">Site</a> |
-  <a target="_blank" href="https://github.com/emmya/emmya.github.io">Source code</a> -->
+
+  <div id="fourRight" class = "butt mix social">
+    <a href="http://instagram.com/emmyarm" target="_blank">
+    <button>Instagram</button>
+    </a>
   </div>
-  <br><br>
+
+  <div id="fourMid" class="butt mix fullstack rails mobile site">
+    <a href="http://gimmeapp.herokuapp.com" target="_blank">
+    <button>Gimme</button>
+    </a>
+
+    <div class="info hide">
+        Full-stack Rails CRUD app with mobile-first design. First attempt at Handlebars and AJAX.
+        <div class="links">
+          <a target="_blank" href="http://gimmeapp.herokuapp.com">Site</a> |
+          <a target="_blank" href="https://github.com/emmya/gimme">Source code</a>
+        </div>
+    </div>
+
+
+
   </div>
-  <!-- closes description div -->
-  </div>
-  <!-- closes battleship div -->
-<div class="spacer"></div>
-<!-- <div class="old">
-Old stuff: <a href="http://emmyarm.tumblr.com/tictactoe">Zombie Tic Tac Toe</a> | <a href="http://emmyarm.tumblr.com/memorygame">Memory Game</a> | <a href="http://emmyarm.tumblr.com/galaxy">Galaxy</a></div> -->
+
 </div>
 
 
+<audio src="guitar.m4a" preload="auto" id="guitar"></audio>
 
 
 </body>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/1.5.6/jquery.mixitup.js"></script>
+<script src="script.js"></script>
+</html>
