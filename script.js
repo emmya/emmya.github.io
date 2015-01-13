@@ -2,10 +2,41 @@
 //given the size of the window.
 document.addEventListener("DOMContentLoaded", function(event) {
 
-    $(function(){
+function is_touch_device() {
+   return (('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0));
+}
+
+$(function(){
   // Instantiate MixItUp:
   $('#Container').mixitup();
 });
+
+if (is_touch_device) {
+    console.log(' touch device');
+} else {
+    console.log('not touch device');
+}
+
+    //DANCING DOG JQUERY
+    $('#dog').click(function() {
+        crazyDog();
+    });
+
+    //UPDATING POSITIONING WHEN WINDOW IS MOVED
+window.addEventListener('resize', function() {
+    w = window.innerWidth; // window width
+    h = window.innerHeight;
+    ctnrWidth = w-sideDiv.offsetWidth-ctnrMarginRight;
+    nc = getColumns();
+    nr = getRows(nc, numCircles);
+    getTopSpacing(nr);
+    getSideSpacing(nc);
+});
+
+
+//===================
+//  BUTTON LOCATION
+//===================
 
 //INITIALIZING VARIABLES AND WIDTH
 var circles = document.getElementsByClassName("butt"); //array of items
@@ -28,7 +59,6 @@ var sideDiv = document.getElementById("left"); //div on the side (can adjust wid
 var ctnrWidth = w-sideDiv.offsetWidth-ctnrMarginRight; //item container width
 
 
-
 //DETERMINING NUMBER OF COLUMNS AND ROWS
 function getColumns() {
     for (var r=0; r<numCircles; r++) {
@@ -38,7 +68,6 @@ function getColumns() {
         }
     }
 }
-
 function getRows(cols, numCircles) {
     if (numCircles%cols === 0) {
         console.log("rows: "+nr);
@@ -50,22 +79,25 @@ function getRows(cols, numCircles) {
 }
 nc = getColumns();
 nr = getRows(nc, numCircles);
-
 //DETERMINING TOP/BOTTOM SPACING
 function getTopSpacing(nr) {
-    if (nr*(diameter+minimumSpace)+minimumSpace > h) {
+    if (nr*(diameter+minimumSpace)+minimumSpace > 600) {
         spacing = minimumSpace;
         sideDiv.style.height = ((nr*(diameter+minimumSpace)+minimumSpace)+"px");
     } else {
         h = window.innerHeight;
-        sideDiv.style.height = (h+5+"px");
-        spacing = (h-(diameter*nr))/(nr+1);
+        if (h > 600) {
+            sideDiv.style.height = (h+5+"px");
+            spacing = (h-(diameter*nr))/(nr+1);
+        } else {
+            sideDiv.style.height = 600+'px';
+            spacing = (600-(diameter*nr))/(nr+1);
+        }
     } for (var x=0; x<numCircles; x++) {
         circles[x].style.marginTop = (spacing+"px");
     }
 }
 getTopSpacing(nr);
-
 //DETERMINING SIDE SPACING
 function getSideSpacing(nc) {
     sideMargins = (ctnrWidth-(diameter*nc))/(nc+1);
@@ -76,24 +108,9 @@ function getSideSpacing(nc) {
 }
 getSideSpacing(nc);
 
-
-//UPDATING POSITIONING WHEN WINDOW IS MOVED
-window.addEventListener('resize', function() {
-    w = window.innerWidth; // window width
-    h = window.innerHeight;
-    ctnrWidth = w-sideDiv.offsetWidth-ctnrMarginRight;
-    nc = getColumns();
-    nr = getRows(nc, numCircles);
-    getTopSpacing(nr);
-    getSideSpacing(nc);
-});
-
-//DANCING DOG JQUERY
-$(document).ready(function(){
-    $('#dog').click(function() {
-        crazyDog();
-    });
-});
+//===================
+//    DANCING DOG
+//===================
 
 var guitar = document.getElementById("guitar");
 
@@ -119,34 +136,23 @@ function animateDiv(){
     });
 }
 
-//info balloons
+//===================
+//   INFO BALLOONS
+//===================
 $(':button').mouseenter(function() {
     var par = $(this).closest('.butt');
     par.children('.info').css("zIndex", 1);
     par.children('.info').animate({
         opacity: 1
     }, 300);
-    // $(this).animate({
-    //     opacity: 0
-    // }, 200);
 });
 $('.butt').mouseleave(function() {
     $(this).children('.info').animate({
-        opacity: 0
-        // zIndex: -1
+        opacity: 0,
+        zIndex: -1
     }, 300);
-    par.children('.info').css("zIndex", -1);
-    // $(this).zIndex(-1);
-    // $(this).children(':button').animate({
-    //     opacity: 1
-    // }, 200);
+    // $(this).children('.info').css("zIndex", -1);
 });
-
-
-
-
-
-
 
 
 
