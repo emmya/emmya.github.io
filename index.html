@@ -16,39 +16,40 @@
 
 <!-- <img id="icon" src="http://i.imgur.com/GkrQObu.png"> -->
 <!-- <img id="icon" src="http://i.imgur.com/2usQMmH.jpg?2"> -->
-<img id="icon" src="http://i.imgur.com/R7FYvWs.png?1">
+<img id="icon" class="wide" src="http://i.imgur.com/R7FYvWs.png?1">
 
 <div id="left">
   <h1>EMMY<br> ARMINTROUT</h1>
-  <h3 class="site">Seattle, WA > <br>Stanford '14 > <br>San Francisco, CA</h3>
-  <h3 class="touch hide">Seattle, WA > Stanford '14 > San Francisco, CA</h3>
-  <p>
+  <h3 class="wide">Seattle, WA > <br>Stanford '14 > <br>San Francisco, CA</h3>
+  <h3 class="thin">Seattle, WA > Stanford '14 > San Francisco, CA</h3>
+  <p class="wide">
   Recent grad from the web dev program @
   <a href="https://generalassemb.ly">General Assembly</a>.
   </p>
-  <p>
+  <p class="wide">
   The latest:
   <a href="http://playbattleship.herokuapp.com">Battleship (beta)</a>
   </p>
-  <p>
+  <p class="mainlinks">
   <a href="https://linkedin.com/in/emmyarm" target="_blank">LinkedIn</a> |
     <a target="_blank" href="http://twitter.com/emmyarm">Twitter</a> |
     <a href="https://github.com/emmya" target="_blank">GitHub</a>
 </p>
   <div class="sorters">
-  <p>
-  Filter:
-  <div class="filter" data-filter="all">All</div>
-  <div class="filter" data-filter="site">Websites</div>
-  <div class="filter" data-filter="fullstack">Full stack</div>
-  <div class="filter" data-filter="jquery">Animated</div>
-  <div class="filter" data-filter="fun">Misc</div>
-  <div class="filter" data-filter="social">Social</div>
-  </p>
+    <p>
+    Filter:
+    <div class="filter" data-filter="all">All</div>
+    <div class="filter" data-filter="site">Websites</div>
+    <div class="filter" data-filter="fullstack">Full stack</div>
+    <div class="filter" data-filter="jquery">Animated</div>
+    <div class="filter" data-filter="fun">Misc</div>
+    <div class="filter" data-filter="social">Social</div>
+    </p>
   </div>
-
 </div>
+<!-- closes sidebar div -->
 
+<!-- buttons container -->
 <div class="container" id="Container">
 
   <div id="oneLeft" class ="butt mix social contact">
@@ -58,11 +59,11 @@
   </div>
 
   <div id="oneRight" class = "butt mix fun jquery">
-    <button class="largerbutton" id="dog" onclick="javascript:goDog()"><span class="whoa">unleash the dog!!</span></button>
+    <button class="largerbutton" id="dog"><span class="whoa">unleash the dog!!</span></button>
     <div class="info">You know you want to...</div>
   </div>
 
-  <div id="oneMid" class="butt mix site jquery">
+  <div id="oneMid wide" class="butt mix site jquery">
     <a href="http://beastmodewisdom.tumblr.com" target="_blank">
     <button class="largerbutton">Marshawn Wisdom</button>
     </a>
@@ -72,7 +73,6 @@
           <a target="_blank" href="http://beastmodewisdom.tumblr.com">Site</a> | <a href="https://github.com/emmya/marshawn.wisdom" target="_blank">Source code</a>
       </div>
     </div>
-
   </div>
 
   <div id="fourLeft" class = "butt mix social contact">
@@ -99,11 +99,10 @@
     </a>
     <div class="info">
     Tic tac toe on steroids! CSS3/JQuery/Transit.js animation. Built from scratch in JS.
-    <div class="links">
-        <a target="_blank" href="http://emmyarm.tumblr.com/ultimatettt">Site</a> |
-        <a target="_blank" href="https://github.com/emmya/ultimateTTT">Source code</a>
-    </div>
-
+      <div class="links">
+          <a target="_blank" href="http://emmyarm.tumblr.com/ultimatettt">Site</a> |
+          <a target="_blank" href="https://github.com/emmya/ultimateTTT">Source code</a>
+      </div>
     </div>
   </div>
 
@@ -111,7 +110,6 @@
     <a href="http://epicportrait.herokuapp.com" target="_blank">
     <button class="largerbutton">Epic Portrait Generator</button>
     </a>
-
     <div class="info">
     Node CRUD app with image hosting, Passport login and authentication, and JS Canvas. Nothing else like it on the Internet. Epic.
       <div class="links">
@@ -151,19 +149,16 @@
     </a>
 
     <div class="info">
-        Full-stack Rails CRUD app with mobile-first design. First attempt at Handlebars and AJAX.
-        <div class="links">
-          <a target="_blank" href="http://gimmeapp.herokuapp.com">Site</a> |
-          <a target="_blank" href="https://github.com/emmya/gimme">Source code</a>
-        </div>
+      Full-stack Rails CRUD app with mobile-first design. First attempt at Handlebars and AJAX.
+      <div class="links">
+        <a target="_blank" href="http://gimmeapp.herokuapp.com">Site</a> |
+        <a target="_blank" href="https://github.com/emmya/gimme">Source code</a>
+      </div>
     </div>
-
-
-
   </div>
 
 </div>
-
+<!-- close button container div -->
 
 <audio src="guitar.m4a" preload="auto" id="guitar"></audio>
 

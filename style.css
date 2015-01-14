@@ -1,14 +1,18 @@
+
+/*  ==============  */
+/*  DEFAULT STYLES  */
+/*  ==============  */
 body {
   font-family: Helvetica;
   margin: 0 auto;
   padding: 0;
   margin: 0;
 }
-
 .hide {
   display: none;
 }
 
+/* sidebar */
 #left {
   width: 300px;
   height: 500px;
@@ -19,7 +23,6 @@ body {
   opacity: .6;
   text-align: center;
 }
-
 #icon {
   position: absolute;
   width: 100px;
@@ -44,10 +47,10 @@ h3 {
   margin-top: 140px;
 }
 
+/* links/text */
 a {
   color: rgba(0, 0, 0, .8);
 }
-
 a:hover {
   color: white;
   -webkit-transition: all .3s ease;
@@ -56,7 +59,6 @@ a:hover {
   -o-transition: all .3s ease;
   transition: all .3s ease;
 }
-
 p {
   color: rgba(255, 255, 255, 1);
   font-size: 11px;
@@ -85,10 +87,10 @@ p {
   cursor: pointer;
 }
 
+/* button area */
 .container {
   margin-right: 0px;
 }
-
 .butt {
   background-image: url(http://desktopwallpapers.biz/wp-content/uploads/2014/09/Texture-For-Downloads.jpg);
   background-size: cover;
@@ -102,11 +104,9 @@ p {
   margin-top: 10px;
   float: left;
 }
-
 .mix {
   display: none;
 }
-
 .info {
   text-align: center;
   position: relative;
@@ -128,61 +128,48 @@ p {
 .info a:hover {
   color: rgba(255, 255, 255, .5);
 }
-
-#oneLeft {
+#oneLeft { /* Twitter */
   background-image: url(http://i.imgur.com/AvGhsus.png);
 }
-
-#oneRight {
+#oneRight { /* Marshawn */
   background-image: url(http://i.imgur.com/Js1wM8W.jpg);
   background-position: center;
 }
-
-#oneMid {
+#oneMid { /* Dog */
   background-image: url(http://i.imgur.com/04Jbq0c.png?1);
 }
-
-#twoLeft {
+#twoLeft { /* Hawks */
   background-image: url(http://images5.alphacoders.com/460/460233.jpg);
   opacity: .9;
 }
-
-#twoMid {
+#twoMid { /* Vimeo */
   background-image: url(http://blog.4tests.com/images/2013/09/stanfordcampus.jpg);
   opacity: .9;
 }
-
-#twoRight {
+#twoRight { /* Random */
   background-image: url(http://images2.wikia.nocookie.net/__cb20060904183543/uncyclopedia/images/8/81/Gasp.jpg);
   opacity: .8;
 }
-
-#threeLeft {
+#threeLeft { /* Ultimate TTT */
   background-image: url(http://i.imgur.com/a9vBcdM.png);
   background-position: center;
 }
-
-#threeMid {
+#threeMid { /* EPG */
   background-image: url(http://i.imgur.com/AmcAfnB.png?1);
 }
-
-#threeRight {
+#threeRight { /* Battleship */
   background-image: url(http://i.imgur.com/LyvxnDF.png?1);
 }
-
-#fourLeft {
+#fourLeft { /* LinkedIn */
   background-image: url(http://i.imgur.com/c7lcmPW.jpg);
 }
-
-#fourMid {
+#fourMid { /* Instagram */
   background-image: url(http://i.imgur.com/WvbKHjV.png?1);
   opacity: .9;
 }
-
-#fourRight {
+#fourRight { /* Gimme */
   background-image: url(http://i.imgur.com/cRSrF4Y.jpg?1);
 }
-
 button {
   border: 1px solid white;
   background: rgba(0, 0, 0, .4);
@@ -198,34 +185,60 @@ button {
   -o-transition: all .3s ease;
   transition: all .3s ease;
 }
-
 button:hover {
   background: rgba(0, 0, 0, .1);
   cursor: pointer;
 }
-
 .largerbutton {
   margin-top: 30%;
 }
-
 #jamdog {
   position: absolute;
   z-index: 100;
 }
+.thin {
+  display: none;
+}
 
-@media screen and (max-width: 560px) {
- #left {
-  float: none;
-  height: 150px;
-  width: 100%;
-  position: absolute;
- }
- h1 {
-  margin-top: 0;
- }
- h3 {
-  margin-top: 20px;
-  font-size: 10px;
- }
+/* THIN SCREEN */
+@media screen and (max-width: 390px) {
+   #left {
+    float: none;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    margin-top: -200px;
+   }
+   .wide {
+    display: none;
+   }
+   .thin {
+    display: inline;
+   }
+   #Container{
+    margin-top: 200px;
+   }
+   h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+   }
+   h3 {
+    font-size: 10px;
+    margin-top: -30px;
+    margin-bottom: 0;
+   }
+   .mainlinks {
+    margin-top: 4px;
+   }
+   .sorters {
+    width: auto;
+   }
+   #oneMid {
+    display: none;
+   }
+   button:hover {
+    background: rgba(0, 0, 0, .4);
+    cursor: auto;
+  }
 }
 
