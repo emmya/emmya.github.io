@@ -49,6 +49,7 @@ if (w >= 390) {
         par.children('.info').animate({
             opacity: 1
         }, 300);
+        par.children('.info').css("zIndex", 1);
     });
     $('.butt').mouseleave(function() {
         $(this).children('.info').animate({
