@@ -92,7 +92,7 @@ p {
   margin-right: 0px;
 }
 .butt {
-  background-image: url(http://desktopwallpapers.biz/wp-content/uploads/2014/09/Texture-For-Downloads.jpg);
+  background-image: url(http://i.imgur.com/04Jbq0c.png?1);
   background-size: cover;
   width: 100px;
   height: 100px;
@@ -131,11 +131,11 @@ p {
 #oneLeft { /* Twitter */
   background-image: url(http://i.imgur.com/AvGhsus.png);
 }
-#oneRight { /* Marshawn */
+#oneRight { /* Dog */
   background-image: url(http://i.imgur.com/Js1wM8W.jpg);
   background-position: center;
 }
-#oneMid { /* Dog */
+#oneMid { /* Marshawn */
   background-image: url(http://i.imgur.com/04Jbq0c.png?1);
 }
 #twoLeft { /* Hawks */
