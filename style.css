@@ -18,7 +18,7 @@ body {
   height: 500px;
   float: left;
   /*background-color: black;*/
-  background-image: url(http://fc03.deviantart.net/fs70/i/2013/144/8/6/texture_313_by_sirius_sdz-d606xty.jpg);
+  background-image: url(https://fc03.deviantart.net/fs70/i/2013/144/8/6/texture_313_by_sirius_sdz-d606xty.jpg);
   /*background-size: cover;*/
   opacity: .6;
   text-align: center;
@@ -92,7 +92,7 @@ p {
   margin-right: 0px;
 }
 .butt {
-  background-image: url(http://i.imgur.com/04Jbq0c.png?1);
+  background-image: url(https://i.imgur.com/04Jbq0c.png?1);
   background-size: cover;
   width: 100px;
   height: 100px;
@@ -129,46 +129,46 @@ p {
   color: rgba(255, 255, 255, .5);
 }
 #oneLeft { /* Twitter */
-  background-image: url(http://i.imgur.com/AvGhsus.png);
+  background-image: url(https://i.imgur.com/AvGhsus.png);
 }
 #oneRight { /* Dog */
-  background-image: url(http://i.imgur.com/Js1wM8W.jpg);
+  background-image: url(https://i.imgur.com/Js1wM8W.jpg);
   background-position: center;
 }
 #oneMid { /* Marshawn */
-  background-image: url(http://i.imgur.com/04Jbq0c.png?1);
+  background-image: url(https://i.imgur.com/04Jbq0c.png?1);
 }
 #twoLeft { /* Hawks */
-  background-image: url(http://images5.alphacoders.com/460/460233.jpg);
+  background-image: url(https://i.imgur.com/Ndh6KMu.jpg);
   opacity: .9;
 }
 #twoMid { /* Vimeo */
-  background-image: url(http://blog.4tests.com/images/2013/09/stanfordcampus.jpg);
+  background-image: url(https://i.imgur.com/LWtgDOc.jpg);
   opacity: .9;
 }
 #twoRight { /* Random */
-  background-image: url(http://images2.wikia.nocookie.net/__cb20060904183543/uncyclopedia/images/8/81/Gasp.jpg);
+  background-image: url(https://i.imgur.com/8NAx67T.jpg);
   opacity: .8;
 }
 #threeLeft { /* Ultimate TTT */
-  background-image: url(http://i.imgur.com/a9vBcdM.png);
+  background-image: url(https://i.imgur.com/a9vBcdM.png);
   background-position: center;
 }
 #threeMid { /* EPG */
-  background-image: url(http://i.imgur.com/AmcAfnB.png?1);
+  background-image: url(https://i.imgur.com/AmcAfnB.png?1);
 }
 #threeRight { /* Battleship */
-  background-image: url(http://i.imgur.com/LyvxnDF.png?1);
+  background-image: url(https://i.imgur.com/LyvxnDF.png?1);
 }
 #fourLeft { /* LinkedIn */
-  background-image: url(http://i.imgur.com/c7lcmPW.jpg);
+  background-image: url(https://i.imgur.com/c7lcmPW.jpg);
 }
 #fourMid { /* Instagram */
-  background-image: url(http://i.imgur.com/WvbKHjV.png?1);
+  background-image: url(https://i.imgur.com/WvbKHjV.png?1);
   opacity: .9;
 }
 #fourRight { /* Gimme */
-  background-image: url(http://i.imgur.com/cRSrF4Y.jpg?1);
+  background-image: url(https://i.imgur.com/cRSrF4Y.jpg?1);
 }
 button {
   border: 1px solid white;
