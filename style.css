@@ -242,3 +242,7 @@ button:hover {
   }
 }
 
+.counter {
+  display: none;
+}
+
