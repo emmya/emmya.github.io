@@ -54,7 +54,6 @@ if (w >= 390) {
     $('.butt').mouseleave(function() {
         $(this).children('.info').animate({
             opacity: 0,
-            zIndex: -1
         }, 300);
     });
 
