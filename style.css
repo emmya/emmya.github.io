@@ -2,76 +2,59 @@
 /*  ==============  */
 /*  DEFAULT STYLES  */
 /*  ==============  */
-body {
-  font-family: Helvetica;
-  margin: 0 auto;
-  padding: 0;
+body, body * {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
   margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  text-align: center;
 }
+
 .hide {
   display: none;
 }
 
-/* sidebar */
-#left {
-  width: 300px;
-  height: 500px;
-  float: left;
-  /*background-color: black;*/
-  background-image: url(https://i.imgur.com/Hpixgov.jpg);
-  /*background-size: cover;*/
-  opacity: .6;
-  text-align: center;
-}
-#icon {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  z-index: 10;
-  margin-left: 100px;
-  margin-top: 174px;
-  border-radius: 50%;
-}
 
 h1 {
   font-size: 30px;
-  color: white;
+  color: #323332;
   font-family: 'Open Sans Condensed', sans-serif;
-  margin-top: 70px;
+  margin: 30px auto 0;
 }
 
-h3 {
-  font-size: 15px;
-  color: white;
+h3, h3 a {
+  font-size: 16px;
+  color: #323332;
   font-family: 'Open Sans Condensed', sans-serif;
-  margin-top: 140px;
 }
 
-/* links/text */
+
 a {
-  color: rgba(0, 0, 0, .8);
-}
-a:hover {
-  color: white;
+  color: #323332;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
+  pointer-events: auto;
 }
+
 p {
-  color: rgba(255, 255, 255, 1);
-  font-size: 11px;
-  margin: 20px 50px 0px 50px;
+  color: #323332;
+  font-size: 12px;
 }
+
+.icon {
+  max-width: 160px;
+  border-radius: 2px;
+}
+
 .sorters {
   margin: 0 auto;
-  width: 200px;
 }
-.sorters p {
-  font-size: 13px;
-  color: white;
-}
+
 .filter {
   border: 1px solid white;
   background: rgba(0, 0, 0, .5);
@@ -87,43 +70,78 @@ p {
   cursor: pointer;
 }
 
-/* button area */
 .container {
-  margin-right: 0px;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
 }
+.button-wrap {
+  display: inline-block;
+  width: 33%;
+  min-width: 150px;
+  vertical-align: top;
+  text-align: center;
+}
+
 .butt {
   background-image: url(https://i.imgur.com/04Jbq0c.png?1);
   background-size: cover;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   text-align: center;
-  vertical-align: center;
-  /*button positioning*/
   position: relative;
-  margin-top: 10px;
-  float: left;
+  margin: 20px auto;
 }
-.mix {
-  display: none;
+
+button {
+  border: 1px solid white;
+  background: rgba(0, 0, 0, .6);
+  border-radius: 4px;
+  padding: 7px;
+  width: 100px;
+  color: white;
+  margin-top: 35%;
+  font-size: 11px;
+  outline: 0;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
+button.disabled {
+  pointer-events: none;
+  cursor: default;
+  background: rgba(0, 0, 0, .6);
+  opacity: 0.7;
+}
+button:hover {
+  background: rgba(0, 0, 0, .1);
+  cursor: pointer;
+}
+.largerbutton {
+  margin-top: 30%;
+}
+
 .info {
   text-align: center;
-  position: relative;
-  background-color: rgba(0, 0, 0, .6);
+  position: absolute;
+  background-color: rgba(0, 0, 0, .8);
   color: white;
-  font-size: 10px;
-  width: 110px;
+  font-size: 11px;
+  width: 150px;
   padding: 10px;
-  border-radius: 10px;
-  margin-top: -80px;
-  margin-left: -80px;
-  cursor: default;
-/*  z-index: -1;*/
+  border-radius: 4px;
+  pointer-events: none;
+  top: 86px;
+  left: -14px;
+  z-index: 100;
   opacity: 0;
 }
 .info a {
   color: rgba(255, 255, 255, .8);
+  pointer-events: auto;
 }
 .info a:hover {
   color: rgba(255, 255, 255, .5);
@@ -170,79 +188,12 @@ p {
 #fourRight { /* Gimme */
   background-image: url(https://i.imgur.com/cRSrF4Y.jpg?1);
 }
-button {
-  border: 1px solid white;
-  background: rgba(0, 0, 0, .4);
-  border-radius: 5px;
-  padding: 7px;
-  width: 70px;
-  color: white;
-  margin-top: 35%;
-  font-size: 9px;
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -ms-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
-}
-button:hover {
-  background: rgba(0, 0, 0, .1);
-  cursor: pointer;
-}
-.largerbutton {
-  margin-top: 30%;
-}
+
 #jamdog {
   position: absolute;
   z-index: 100;
 }
 .thin {
-  display: none;
-}
-
-/* THIN SCREEN */
-@media screen and (max-width: 390px) {
-   #left {
-    float: none;
-    height: 200px;
-    width: 100%;
-    position: absolute;
-    margin-top: -200px;
-   }
-   .wide {
-    display: none;
-   }
-   .thin {
-    display: inline;
-   }
-   #Container{
-    margin-top: 200px;
-   }
-   h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-   }
-   h3 {
-    font-size: 10px;
-    margin-top: -30px;
-    margin-bottom: 0;
-   }
-   .mainlinks {
-    margin-top: 4px;
-   }
-   .sorters {
-    width: auto;
-   }
-   #oneMid {
-    display: none;
-   }
-   button:hover {
-    background: rgba(0, 0, 0, .4);
-    cursor: auto;
-  }
-}
-
-.counter {
   display: none;
 }
 
