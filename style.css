@@ -94,6 +94,13 @@ p {
   margin: 20px auto;
 }
 
+.button-wrap.hey {
+  display: inline-block;
+  padding: 40px 8px;
+}
+.hey p { color: gray; }
+.hey a { color: black; text-decoration: none;}
+
 button {
   border: 1px solid white;
   background: rgba(0, 0, 0, .6);
