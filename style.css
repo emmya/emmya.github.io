@@ -1,16 +1,24 @@
 
-/*  ==============  */
-/*  DEFAULT STYLES  */
-/*  ==============  */
+body {
+  padding: 20px 0;
+}
+
 body, body * {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: sans-serif;
   font-weight: 300;
   margin: 0;
-  padding: 0;
   background-repeat: no-repeat;
   box-sizing: border-box;
   text-align: center;
 }
+
+#jamdog {
+  position: absolute;
+  z-index: 100;
+}
+
+
+/*
 
 .hide {
   display: none;
@@ -153,46 +161,46 @@ button:hover {
 .info a:hover {
   color: rgba(255, 255, 255, .5);
 }
-#oneLeft { /* Twitter */
+#oneLeft {
   background-image: url(https://i.imgur.com/AvGhsus.png);
 }
-#oneRight { /* Dog */
+#oneRight {
   background-image: url(https://i.imgur.com/Js1wM8W.jpg);
   background-position: center;
 }
-#oneMid { /* Marshawn */
+#oneMid {
   background-image: url(https://i.imgur.com/04Jbq0c.png?1);
 }
-#twoLeft { /* Hawks */
+#twoLeft {
   background-image: url(https://i.imgur.com/Ndh6KMu.jpg);
   opacity: .9;
 }
-#twoMid { /* Vimeo */
+#twoMid {
   background-image: url(https://i.imgur.com/LWtgDOc.jpg);
   opacity: .9;
 }
-#twoRight { /* Random */
+#twoRight {
   background-image: url(https://i.imgur.com/8NAx67T.jpg);
   opacity: .8;
 }
-#threeLeft { /* Ultimate TTT */
+#threeLeft {
   background-image: url(https://i.imgur.com/a9vBcdM.png);
   background-position: center;
 }
-#threeMid { /* EPG */
+#threeMid {
   background-image: url(https://i.imgur.com/AmcAfnB.png?1);
 }
-#threeRight { /* Battleship */
+#threeRight {
   background-image: url(https://i.imgur.com/LyvxnDF.png?1);
 }
-#fourLeft { /* LinkedIn */
+#fourLeft {
   background-image: url(https://i.imgur.com/c7lcmPW.jpg);
 }
-#fourMid { /* Instagram */
+#fourMid {
   background-image: url(https://i.imgur.com/WvbKHjV.png?1);
   opacity: .9;
 }
-#fourRight { /* Gimme */
+#fourRight {
   background-image: url(https://i.imgur.com/cRSrF4Y.jpg?1);
 }
 
@@ -204,3 +212,4 @@ button:hover {
   display: none;
 }
 
+*/
