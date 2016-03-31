@@ -30,12 +30,12 @@
 //   "Christmas '15": ''
 // };
 
-// var guitar = document.getElementById("guitar");
+var guitar = document.getElementById("guitar");
 
 var unleash = function() {
     $('.jamdog').html('<img src="http://i.imgur.com/9DueHnf.gif" height=200px width=170px>');
     animateDoge();
-    // guitar.play();
+    guitar.play();
 };
 
 function animateDoge() {
